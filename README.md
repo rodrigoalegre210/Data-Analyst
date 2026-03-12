@@ -8,7 +8,7 @@
 
 ## 📄 Descripción del Proyecto
 
-Este repositorio contiene el desarrollo de un análisis integral sobre accidentes aeronáuticos históricos. El objetivo principal es transformar datos crudos en información estratégica a través de un proceso de **ETL**, almacenamiento en **SQL** y visualización en **Power BI**, permitiendo identificar patrones de seguridad y tasas de mortalidad en la aviación.
+Este repositorio contiene el desarrollo de un análisis sobre accidentes aeronáuticos históricos. El objetivo principal es transformar datos crudos en información estratégica a través de un proceso de **ETL**, almacenamiento en **SQL** y visualización en **Power BI**, haciendo posible la identificación de patrones de seguridad y tasas de mortalidad en la aviación.
 
 ### Objetivos del Proyecto:
 * **Procesamiento de Datos:** Limpieza y normalización de datasets mediante Python.
@@ -45,15 +45,6 @@ El reporte en **Power BI** se conecta a MySQL para visualizar indicadores críti
 
 > [!IMPORTANT]
 > El Dashboard permite filtrar por periodos de tiempo y tipos de aeronaves, facilitando la identificación de los años con mayor tasa de siniestralidad.
-
----
-
-## 📂 Estructura del Repositorio
-
-* **`Limpieza_Datos.ipynb`**: Notebook con el proceso de ETL y análisis exploratorio.
-* **`Carga_SQL.py`**: Script de automatización para la migración de datos a MySQL.
-* **`Reporte_Siniestros.pbix`**: Archivo de Power BI con el Dashboard final.
-* **`Dataset/`**: Carpeta que contiene los archivos origen utilizados.
 
 ---
 
