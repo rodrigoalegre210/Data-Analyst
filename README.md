@@ -1,30 +1,60 @@
-# Análisis de datos
+<h1 align="center"> ✈️ Siniestros Aéreos: ETL & Business Intelligence </h1>
 
-## Proyecto individual 3
+> **Proyecto Individual Nº3** - Etapa de Laboratorios (Henry Bootcamp)
+> 
+> **Rol:** Data Analyst
 
-En este proyecto hacemos una limpieza de datos, una función para enviar un archivo .csv a una base de datos en MySQL y la creación de un Dashboard abarcando las muertes en accidentes aereos.
+---
 
-Como principal objetivo, el Dashboard mostrará el total de personas a bordo en las aeronaves por año y la cantidad de fallecidos por año. Tambíen se mostrará información adicional gracias a los datos del archivo asignado.
+## 📄 Descripción del Proyecto
 
-## Tecnologías usadas:
+Este repositorio contiene el desarrollo de un análisis integral sobre accidentes aeronáuticos históricos. El objetivo principal es transformar datos crudos en información estratégica a través de un proceso de **ETL**, almacenamiento en **SQL** y visualización en **Power BI**, permitiendo identificar patrones de seguridad y tasas de mortalidad en la aviación.
 
-- Python.
-- - Pandas.
+### Objetivos del Proyecto:
+* **Procesamiento de Datos:** Limpieza y normalización de datasets mediante Python.
+* **Ingesta SQL:** Automatización de la carga de datos desde archivos planos (.csv) a una base de datos relacional.
+* **Análisis de BI:** Creación de un Dashboard interactivo para el monitoreo de KPIs de seguridad aérea.
 
-- MySQL.
-- - Base de datos.
+---
 
-- Power BI.
-- - Dashboard.
+## 🛠️ Tecnologías Utilizadas
 
-# Limpieza
+| Categoría | Herramientas |
+|-----------|--------------|
+| **Lenguaje** | Python (Pandas, NumPy) |
+| **Base de Datos** | MySQL |
+| **Visualización** | Power BI |
+| **Conectividad** | SQLAlchemy / PyMySQL |
 
-Esta es algo rápida ya que el archivo .csv no tenía muchas imperfecciones, se cambiaron algunos valores y se seleccionaron columnas que serían útiles para nuestro Dashboard.
+---
 
-# Base de Datos
+## ⚙️ Fases del Desarrollo
 
-Se crea una base de datos en MySQL la cual va a tener una tabla con las columnas y sus valores seleccionados en la limpieza anteriormente mencionada. 
+### 1. Extracción, Transformación y Carga (ETL)
+Se realizó un **EDA (Exploratory Data Analysis)** detallado para manejar valores faltantes y normalizar columnas. La limpieza se enfocó en asegurar que las métricas de personas a bordo y fallecidos fueran consistentes para su posterior análisis.
 
-# Dashboard
+### 2. Arquitectura de Datos (MySQL)
+Para garantizar la persistencia y la escalabilidad del análisis, se desarrolló un script en Python que:
+- Crea la estructura de la base de datos en **MySQL**.
+- Realiza la ingesta de los datos transformados de manera automatizada.
 
-Una vez tenemos los datos en MySQL hacemos una conección con Power BI para ingestar la tabla y poder realizar el Dashboard.
+### 3. Dashboard e Insights
+El reporte en **Power BI** se conecta a MySQL para visualizar indicadores críticos, tales como:
+- **Evolución Anual:** Tendencia de accidentes y fatalidades a través del tiempo.
+- **Tasa de Mortalidad:** Calculada mediante la relación entre fallecidos y total de personas a bordo.
+
+> [!IMPORTANT]
+> El Dashboard permite filtrar por periodos de tiempo y tipos de aeronaves, facilitando la identificación de los años con mayor tasa de siniestralidad.
+
+---
+
+## 📂 Estructura del Repositorio
+
+* **`Limpieza_Datos.ipynb`**: Notebook con el proceso de ETL y análisis exploratorio.
+* **`Carga_SQL.py`**: Script de automatización para la migración de datos a MySQL.
+* **`Reporte_Siniestros.pbix`**: Archivo de Power BI con el Dashboard final.
+* **`Dataset/`**: Carpeta que contiene los archivos origen utilizados.
+
+---
+
+<h3 align="center">🚀 Desarrollado por Rodrigo - Data Science & AI Engineer 🚀</h3>
